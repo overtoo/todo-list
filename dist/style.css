@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dddddf;
+}
+
+.active {
+  color: #000000;
+  font-weight: bold;
+  background-color: #c792df !important;
+}
+
+table,
+th,
+td {
+  padding: 10px;
+}
+
+#container {
+  display: flex;
+  width: 900px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+#sidebar .tab {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #d0c4df;
+  margin: 10px;
+  border-radius: 5%;
+  text-transform: capitalize;
+}
+
+#sidebar .add-project {
+  padding: 10px;
+  background-color: #d0c4df;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5%;
+  text-transform: capitalize;
+}
+
+#header {
+  width: 100%;
+  /* border: dashed; */
+}
+
+th {
+  background-color: lightgray;
+  text-transform: capitalize;
+  border: 0.5px solid black;
+}
+
+#sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: relative; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 100;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+#content {
+  /* border: dashed; */
+  background-color: #d0c4df;
+}
+
+.add-task {
+  background-color: #c792df;
+  border-style: none;
+  width: 700px;
+  font-size: 20px;
+  /* float: right; */
+  margin-right: 100px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.task-input {
+  height: 30px;
+  padding: 2px;
+  /* font-size: 1.1em; */
+}
+
+td {
+  width: 130px;
+}
+
+#task-form {
+  position: absolute;
+  width: 500px;
+  top: 50px;
+  left: 460px;
+  margin: 0 auto;
+  z-index: 3;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: none;
+}
+
+#close-tb {
+  position: absolute;
+  top: 0px;
+  left: 458px;
+  background-color: #c792df;
+  border-style: solid;
+  color: white;
+  border-radius: 15%;
+  padding: 5px;
+  padding-right: 32px;
+  padding-left: 32px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#close-tb:hover {
+  background-color: #be7edc;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #c792df;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #be7edc;
+}
