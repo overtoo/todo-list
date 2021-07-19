@@ -24,6 +24,7 @@ td {
 
 #sidebar .tab {
   cursor: pointer;
+
   padding: 10px;
   background-color: #d0c4df;
   margin: 10px;
@@ -64,6 +65,7 @@ th {
 
 #content {
   /* border: dashed; */
+  width: 800px;
   background-color: #d0c4df;
 }
 
