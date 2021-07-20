@@ -168,8 +168,10 @@ input[type="submit"]:hover {
 
   #container {
     display: block;
-    width: 90%;
-    padding: 50px;
+    width: 95%;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin: 0 auto;
   }
 
@@ -180,7 +182,7 @@ input[type="submit"]:hover {
     padding-top: 0px;
     margin-right: 50px;
     /* height: 200px; Full-height: remove this if you want "auto" height */
-    width: 90%; /* Set the width of the sidebar */
+    width: 100%; /* Set the width of the sidebar */
     overflow-x: hidden; /* Disable horizontal scroll */
     /* padding-top: 20px; */
     display: flex;
@@ -221,7 +223,7 @@ input[type="submit"]:hover {
 
   #content {
     /* border: dashed; */
-    width: 90%;
+    width: 100%;
     background-color: #d0c4df;
     margin-bottom: 10px;
     border-style: solid;
@@ -267,21 +269,25 @@ input[type="submit"]:hover {
 
   #task-form {
     position: absolute;
-    width: 500px;
-    top: 50px;
-    left: 460px;
+    width: 80%;
+    top: 20px;
+    left: 20px;
     margin: 0 auto;
     z-index: 3;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    margin-right: 30px;
     display: none;
   }
 
   #close-tb {
-    position: absolute;
-    top: 0px;
-    left: 458px;
+    position: relative;
+    /* top: 0px; */
+    float: right;
+    top: -20px;
+    left: 5%;
+    /* height: 100px; */
     background-color: #c792df;
     border-style: solid;
     color: white;
