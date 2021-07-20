@@ -25,10 +25,21 @@ const projectController = (() => {
       default: [
         {
           title: "default task",
-          description: "get shit done",
-          dueDate: "n/a",
+          desc: "get shit done",
+          due: "n/a",
           priority: 2,
-          complete: false,
+          status: false,
+        },
+      ],
+    },
+    {
+      project1: [
+        {
+          title: "default task",
+          desc: "get shit done",
+          due: "n/a",
+          priority: 2,
+          status: false,
         },
       ],
     },
@@ -89,19 +100,13 @@ const projectController = (() => {
     return projectObject[projects.indexOf(project)];
   };
 
-  const taskCreator = (
-    title,
-    description,
-    dueDate,
-    priority = "2",
-    complete = false
-  ) => {
+  const taskCreator = (title, desc, due, priority = "2", status = false) => {
     return {
       title,
-      description,
-      dueDate,
+      desc,
+      due,
       priority,
-      complete,
+      status,
     };
   };
 

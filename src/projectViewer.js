@@ -72,11 +72,10 @@ const projectViewer = (() => {
     if (data.length == 0) {
       data.push({
         title: "",
-        description: "",
-        dueDate: "",
+        desc: "",
+        due: "",
         priority: "",
-        project: "",
-        complete: false,
+        status: false,
       });
     }
 
