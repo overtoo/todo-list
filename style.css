@@ -150,3 +150,176 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #be7edc;
 }
+
+@media screen and (max-width: 900px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+
+  .active {
+    color: #000000;
+    font-weight: bold;
+    background-color: #c792df !important;
+  }
+
+  table,
+  th,
+  td {
+    padding: 10px;
+  }
+
+  #container {
+    display: block;
+    width: 90%;
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  #sidebar {
+    background-color: #d0c4df;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-right: 50px;
+    /* height: 200px; Full-height: remove this if you want "auto" height */
+    width: 90%; /* Set the width of the sidebar */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /* padding-top: 20px; */
+    display: flex;
+    border-radius: 5px;
+  }
+
+  #sidebar .tab {
+    border-radius: 5%;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #d0c4df;
+    margin: 10px;
+    border-radius: 5%;
+    text-transform: capitalize;
+  }
+
+  #sidebar .add-project {
+    padding: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #c792df;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10%;
+    text-transform: capitalize;
+  }
+
+  #header {
+    width: 100%;
+    /* border: dashed; */
+  }
+
+  th {
+    background-color: lightgray;
+    text-transform: capitalize;
+    border: 0.5px solid black;
+  }
+
+  #content {
+    /* border: dashed; */
+    width: 90%;
+    background-color: #d0c4df;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: #d0c4df;
+    border-radius: 5px;
+  }
+
+  .add-task {
+    background-color: #c792df;
+    border-style: none;
+    width: 90%;
+    font-size: 20px;
+    /* float: right; */
+    margin-right: 100px;
+    margin-bottom: 10px;
+
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+
+  .task-input {
+    height: 30px;
+    padding: 2px;
+    /* font-size: 1.1em; */
+  }
+
+  td {
+    width: 130px;
+  }
+
+  th {
+    width: 20px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+
+  #task-form {
+    position: absolute;
+    width: 500px;
+    top: 50px;
+    left: 460px;
+    margin: 0 auto;
+    z-index: 3;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: none;
+  }
+
+  #close-tb {
+    position: absolute;
+    top: 0px;
+    left: 458px;
+    background-color: #c792df;
+    border-style: solid;
+    color: white;
+    border-radius: 15%;
+    padding: 5px;
+    padding-right: 32px;
+    padding-left: 32px;
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  #close-tb:hover {
+    background-color: #be7edc;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #c792df;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #be7edc;
+  }
+}
